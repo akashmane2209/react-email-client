@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .email-list::-webkit-scrollbar {
+    @apply w-2;
+  }
+
+  .email-list::-webkit-scrollbar-track {
+    @apply bg-gray-200 rounded-md;
+  }
+
+  .email-list::-webkit-scrollbar-thumb {
+    @apply bg-gray-300 rounded-md;
+  }
+}
