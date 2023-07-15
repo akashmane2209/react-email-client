@@ -1,7 +1,6 @@
 import EmailService from "@/services/email.service";
 import { STORAGE_KEYS, StorageService } from "@/services/storage.service";
 import { Filter, Email as _Email } from "@/types";
-import { FILTERS } from "@/utils/constants";
 import { format } from "date-fns";
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
