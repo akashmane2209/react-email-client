@@ -6,9 +6,11 @@ import { cn } from "@/utils/helpers";
 const EmailListItem = ({ email }: { email: Email }) => {
   const { id } = useParams();
   let commonClasses =
-    "flex items-start px-6 py-2 space-x-5 text-sm transition-colors bg-white border-b last:border-none border-border hover:bg-readbackground first:rounded-t-md last:rounded-b-md";
+    "flex items-start px-6 py-2 space-x-5 text-sm transition-colors  border-b last:border-none border-border hover:bg-readbackground first:rounded-t-md last:rounded-b-md";
   if (email.read) {
     commonClasses += " bg-readbackground";
+  } else {
+    commonClasses += " bg-white";
   }
   return (
     <NavLink
