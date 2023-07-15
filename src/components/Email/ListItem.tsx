@@ -1,6 +1,8 @@
-import { Email } from "@/contexts/EmailContext";
 import { NavLink, useParams } from "react-router-dom";
-import Avatar from "../Avatar";
+
+import Avatar from "@/components/Avatar";
+import { Email } from "@/contexts/EmailContext";
+
 import { cn } from "@/utils/helpers";
 
 const EmailListItem = ({ email }: { email: Email }) => {

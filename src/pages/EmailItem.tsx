@@ -1,9 +1,12 @@
-import Avatar from "@/components/Avatar";
-import Loader from "@/components/Email/Loader";
-import { useEmailContext } from "@/contexts/EmailContext";
-import EmailService from "@/services/email.service";
 import { useEffect, useMemo, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+
+import Avatar from "@/components/Avatar";
+import Loader from "@/components/Email/Loader";
+
+import { useEmailContext } from "@/contexts/EmailContext";
+
+import EmailService from "@/services/email.service";
 
 function EmailItem() {
   const navigate = useNavigate();

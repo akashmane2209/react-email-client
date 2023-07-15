@@ -1,10 +1,14 @@
+import { Outlet, useParams } from "react-router-dom";
+
 import EmailListItem from "@/components/Email/ListItem";
 import InfiniteScroll from "@/components/InfiniteScroll";
+
 import { useEmailContext } from "@/contexts/EmailContext";
-import { Filter } from "@/types";
+
 import { FILTERS } from "@/utils/constants";
 import { cn } from "@/utils/helpers";
-import { Outlet, useParams } from "react-router-dom";
+
+import { Filter } from "@/types";
 
 function EmailList() {
   const {

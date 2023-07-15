@@ -3,7 +3,8 @@ import { RouteObject, useRoutes } from "react-router-dom";
 import EamilList from "@/pages/EmailList";
 import EmailItem from "@/pages/EmailItem";
 import MainLayout from "@/layouts/Main";
-import { EmailContextProvider } from "./contexts/EmailContext";
+
+import { EmailContextProvider } from "@/contexts/EmailContext";
 
 const routes: RouteObject = {
   path: "/",

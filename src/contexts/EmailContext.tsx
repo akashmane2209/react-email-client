@@ -1,8 +1,10 @@
+import { createContext, useContext, useEffect, useMemo, useState } from "react";
+import { format } from "date-fns";
+
 import EmailService from "@/services/email.service";
 import { STORAGE_KEYS, StorageService } from "@/services/storage.service";
+
 import { Filter, Email as _Email } from "@/types";
-import { format } from "date-fns";
-import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
 export type Email = _Email & {
   body?: string;
